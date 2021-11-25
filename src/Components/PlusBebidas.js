@@ -69,67 +69,63 @@ const Plus = ({bebida, cart ,setCart, bebidas}) => {
         {id: 5, name: 'Pasas', image: Pasasg, price: 25}
       ])
 
-      const {id, name, image,price } = guajolotas
+    const {id, name, image,price } = guajolotas
      
-    // const {idb, nameb, iamgeb, priceb} = bebida
     const {idb, nameb, imageb, priceb } = bebida
-    //aqui esta la solucion para mostrar solamente el producto sobre el que se haga click 
+    
     const [counter, setCounter] = useState(0)
-
 
 
     const addBebida = idb => {
         const bebida = bebidas.filter((bebida) => bebida.idb === idb )
         setCart([...cart, ...bebida])    
-        // contadorBebida ();                       //aqui esta el problema, pero cual es???
-        // alert('Agregaste una Bebida al carrito')
+      
     };
-    // const contadorBebida = (idb) =>{
-    //     idb = idb +1
-    //     return <div>^`</div>
-
-    // }
+   
     const delBebida = idb => {
         const bebida =  cart.filter(bebida => bebida.idb !== idb )
         setCart([...bebida])
-        // setCart(...guajolotas)
 
-    }
+    };
 
 
     const addGuajolota = id => {
         const guajolota = guajolotas.filter((guajolota) => guajolota.id === id )
         setCart([...cart, ...guajolota])    
-        // contadorBebida ();                       //aqui esta el problema, pero cual es???
-        // alert('Agregaste una Bebida al carrito')
+       
     };
 
 
     const handleSumar = () => {
         setCounter(counter + 1)
-    }
+    };
+
+
     const handleRestar = () => {
         setCounter(counter - 1)
-    }
+    };
+
+
     const total =(pricet, counter)=>{
         let tot = (counter * pricet)
         return tot 
 
-    }
+    };
+
+
     return (
         <div>
-           {/* delBebida(idb); 
-           addBebida(idb);  */}
+           
             <GrdAbu> {/* Grid Abuelo*/} 
-                <Grdt1><Link to="/bebida"><FontAwesomeIcon icon={faChevronLeft} /></Link></Grdt1>{/*Grid tios */}
-                <Grdt2><Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link></Grdt2>{/*Grid tios */}
-                <Grdt3><Imggua src={imageb} alt="" /></Grdt3>{/*Grid tios */}
-                <Grdt4>{nameb}</Grdt4>{/*Grid tios */}
-                <Grdt5>$ {priceb} MXN</Grdt5>{/*Grid tios */}
+                <Grdt1><Link to="/bebida"><FontAwesomeIcon icon={faChevronLeft} /></Link></Grdt1>
+                <Grdt2><Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link></Grdt2>
+                <Grdt3><Imggua src={imageb} alt="" /></Grdt3>
+                <Grdt4>{nameb}</Grdt4>
+                <Grdt5>$ {priceb} MXN</Grdt5>
                 <Grdph6> {/* Grid papa con hijos */}
-                    <Grdph61 type='button' onClick={() => {handleRestar(); delBebida(idb)} }><FontAwesomeIcon icon={faMinus} /> </Grdph61>{/*Hijos del grid papa  */}
-                    <Grdph62>{counter}</Grdph62>{/*Hijos del grid papa  */}
-                    <Grdph63       type='button' onClick={() =>{handleSumar(); addBebida(idb)} }><FontAwesomeIcon icon={faPlus} /></Grdph63>{/*Hijos del grid papa  */}
+                    <Grdph61 type='button' onClick={() => {handleRestar(); delBebida(idb)} }><FontAwesomeIcon icon={faMinus} /> </Grdph61>
+                    <Grdph62>{counter}</Grdph62>
+                    <Grdph63       type='button' onClick={() =>{handleSumar(); addBebida(idb)} }><FontAwesomeIcon icon={faPlus} /></Grdph63>
                 </Grdph6>  
                 <Grdt7>Sabor</Grdt7>{/*Grid tios */}
                 <Grdph8>
@@ -146,12 +142,12 @@ const Plus = ({bebida, cart ,setCart, bebidas}) => {
                             )}
                            
                 </Grdph8>  
-                <Grdt9>Guajolocombo</Grdt9>{/*Grid tios */}
-                <Grdt10><p>Selecciona la bebida que más te guste y disfruta de tu desayuno.</p></Grdt10>{/*Grid tios */}
+                <Grdt9>Guajolocombo</Grdt9>
+                <Grdt10><p>Selecciona la bebida que más te guste y disfruta de tu desayuno.</p></Grdt10>
                 <Grdph11>
                
                     
-                    {/* Grid papa con hijos */}
+                    
                     <Grdph111 style={{gridColumn: '1/13'}}>
                         {guajolotas.map((guajolota) => (
                             <Btnplus  type='button' onClick={() => addGuajolota(id) }>
@@ -165,10 +161,10 @@ const Plus = ({bebida, cart ,setCart, bebidas}) => {
                             </Btnplus>
                             
                             )
-                        )}</Grdph111>{/*Hijos del grid papa  */}
+                        )}</Grdph111>
                     
                 </Grdph11>
-                <Grdph12>{/* Grid papa con hijos */}
+                <Grdph12>
                     <Grdph121>
                         
                         
@@ -177,8 +173,8 @@ const Plus = ({bebida, cart ,setCart, bebidas}) => {
                         </ Gridss4 >
                                                     
                                                     
-                    </Grdph121>{/*Hijos del grid papa  */}
-                    <Grdph122>$ {total(priceb, counter )}</Grdph122>{/*Hijos del grid papa  */}
+                    </Grdph121>
+                    <Grdph122>$ {total(priceb, counter )}</Grdph122>
                 </Grdph12>
             </GrdAbu>
         </div>

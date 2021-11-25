@@ -48,7 +48,7 @@ export const AppRouter = () => {
 
     //creo el estado de guajolotas con un listado de guajolotas 
     const [guajolotas, setGuajolotas] = useState([
-        {id: 1, name: 'Verde', image: Verdeg, price: 25},
+        { type:"guajolotas", id: 1, name: 'Verde',  image: Verdeg, price: 25},
         {id: 2, name: 'Mole', image: Moleg, price: 25},
         {id: 3, name: 'Guayaba', image: Guayabag, price: 25},
         {id: 4, name: 'Piña', image: Piñag, price: 25},
@@ -57,7 +57,7 @@ export const AppRouter = () => {
 
 //creo el estado de bebidas con un listado de bebidas 
       const [bebidas, setBebeidas] = useState([
-        {idb: 1, nameb: 'Champurado', imageb: Champurado, priceb: 12},
+        {type:"bebidas", idb: 1, nameb: 'Champurado', imageb: Champurado, priceb: 12},
         {idb: 2, nameb: 'Atole de arroz', imageb: Arrozg, priceb: 12},
         {idb: 3, nameb: 'Hot chocolat', imageb: Chocolates, priceb: 12},
         {idb: 4, nameb: 'Cafe negro ', imageb: Cafe, priceb: 12}
@@ -66,7 +66,7 @@ export const AppRouter = () => {
 
 //creo el estado de tamales con un listado de tamales 
       const [tamales, setTamales] = useState([
-        {idt: 1, namet: 'Verde', imaget: Verdet, pricet: 14},
+        { type:"tamales", idt: 1, namet: 'Verde', imaget: Verdet, pricet: 14},
         {idt: 2, namet: 'Mole', imaget: Molet, pricet: 14},
         {idt: 3, namet: 'Guayaba', imaget: Guayabat, pricet: 14},
         {idt: 4, namet: 'Piña', imaget: Piñat, pricet: 14},
@@ -77,6 +77,7 @@ export const AppRouter = () => {
 //creo el estado del carrito y el setCart para actualizar su estado
 
       const [cart, setCart] = useState([])
+
 
     
 

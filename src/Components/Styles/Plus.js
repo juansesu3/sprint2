@@ -307,7 +307,7 @@ box-shadow: 5px 5px 10px  #8585856a;
 
 
 export const Btnplus = styled.button`
-
+/* border: 2px solid green; */
 background: none;
   border: 0;
   color: inherit;
