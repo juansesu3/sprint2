@@ -17,7 +17,7 @@ export const Main = () => {
                 </Grid1>
 
                 <Grid2>
-                    <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
+                    <Link to="/cart" style={{ textDecoration: 'none', color: '#1f1f1fac'   }}><FontAwesomeIcon icon={faShoppingCart} /></Link>
                 </Grid2>
 
                 <Grid3>
@@ -34,15 +34,15 @@ export const Main = () => {
                 </Grid5>
 
                 <Grid6>
-                <Link  to="/guajolota" style={{ textDecoration: 'none' }}>Guajolotas </Link>
+                <Link  to="/guajolota" style={{ textDecoration: 'none', color: '#1f1f1fac', fontWeight: 'bold'  }}>Guajolotas </Link>
                 </Grid6>
 
                 <Grid7>
-                <Link  to="/bebida" style={{ textDecoration: 'none' }}>Bebidas</Link>
+                <Link  to="/bebida" style={{ textDecoration: 'none', color: '#1f1f1fac', fontWeight: 'bold'  }}>Bebidas</Link>
                 </Grid7>
 
                 <Grid8>
-                <Link  to="/tamal" style={{ textDecoration: 'none' }}>Tamales</Link>
+                <Link  to="/tamal" style={{ textDecoration: 'none', color: '#1f1f1fac', fontWeight: 'bold' }}>Tamales</Link>
                 </Grid8> 
 
             </Gridp>

@@ -118,10 +118,10 @@ const Plus = ({bebida, cart ,setCart, bebidas}) => {
            
             <GrdAbu> 
                 <Grdt1>
-                    <Link to="/bebida"><FontAwesomeIcon icon={faChevronLeft} /></Link>
+                    <Link to="/bebida" style={{ textDecoration: 'none', color: '#1f1f1fac'  }}><FontAwesomeIcon icon={faChevronLeft} /></Link>
                 </Grdt1>
                 <Grdt2>
-                    <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
+                    <Link to="/cart" style={{ textDecoration: 'none', color: '#1f1f1fac'  }}><FontAwesomeIcon icon={faShoppingCart} /></Link>
                 </Grdt2>
                 <Grdt3>
                     <Imggua src={imageb} alt="" />

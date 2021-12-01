@@ -88,11 +88,11 @@ const Plus = ({ guajolota, cart, setCart, guajolotas }) => {
            delGuajolota(id);  */}
             <GrdAbu>
                 <Grdt1>
-                    <Link to="/guajolota"><FontAwesomeIcon icon={faChevronLeft} /></Link>
+                    <Link to="/guajolota" style={{ textDecoration: 'none', color: '#1f1f1fac'  }}><FontAwesomeIcon icon={faChevronLeft} /></Link>
                 </Grdt1>
 
                 <Grdt2>
-                    <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
+                    <Link to="/cart" style={{ textDecoration: 'none', color: '#1f1f1fac'  }}><FontAwesomeIcon icon={faShoppingCart} /></Link>
                 </Grdt2>
 
                 <Grdt3  >

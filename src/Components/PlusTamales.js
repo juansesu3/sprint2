@@ -84,8 +84,8 @@ const Plus = ({tamal, cart ,setCart, tamales }) => {
     return (
         <div>
             <GrdAbu> 
-                <Grdt1><Link to="/tamal"><FontAwesomeIcon icon={faChevronLeft} /></Link></Grdt1>
-                <Grdt2><Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link></Grdt2>
+                <Grdt1><Link to="/tamal" style={{ textDecoration: 'none', color: '#1f1f1fac'  }}><FontAwesomeIcon icon={faChevronLeft} /></Link></Grdt1>
+                <Grdt2><Link to="/cart" style={{ textDecoration: 'none', color: '#1f1f1fac'  }}><FontAwesomeIcon icon={faShoppingCart} /></Link></Grdt2>
                 <Grdt3><Imggua src={imaget} alt="" /></Grdt3>
 
                 <Grdt4>{namet}</Grdt4>

@@ -64,10 +64,11 @@ export const Grid5 = styled.div`
 
 export const Grid6 = styled.div`
     background-color: #F2F2F2;
-    grid-column: 2/3    ;
+    grid-column: 1/3    ;
     grid-row: 6/7;  
     /* border: 1px solid pink; */
     text-align: center;
+    padding: 0px 10px;
 
 
 `;
@@ -76,7 +77,7 @@ export const Grid7 = styled.div`
     background-color: #F2F2F2;
     grid-column: 4/7;
     grid-row: 6/8;  
-    padding: 0px 0px 0px 0px;
+    padding: 0px 14px;
     /* border: 1px solid pink; */
     text-align: center;
 
@@ -89,6 +90,7 @@ export const Grid8 = styled.div`
     grid-row: 6/7;  
     /* border: 1px solid pink; */
     text-align: center;
+    padding: 0px 6px;
 
 
 `;
