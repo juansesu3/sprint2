@@ -7,7 +7,7 @@ export const Navbar = () => {
         <div>
             <div >
                 <nav>
-                <Link  to="/gujolota">Guajolotas </Link>
+                <Link  to="/guajolota">Guajolotas </Link>
                 <Link  to="/bebida">Bebidas</Link>
                 <Link  to="/tamal">Tamales</Link>
                 </nav>

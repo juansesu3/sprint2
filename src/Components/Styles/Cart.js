@@ -49,8 +49,7 @@ export const TotalCont = styled.div`
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(7, 1fr);
-
-
+    
 `;
 
 export const Texttotal =styled.div`
@@ -96,6 +95,8 @@ export const BtnPay = styled.button`
 `;
 export const ImageCart = styled.img`
 
- padding: 55px 72px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding:  27%;
 
 `;

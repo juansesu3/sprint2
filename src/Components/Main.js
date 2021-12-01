@@ -6,70 +6,48 @@ import { Navbar } from './Navbar';
 import { Link } from "react-router-dom";
 
 
-
-
-
-
-
 export const Main = () => {
 
-
-
     return (
-        <div>
+        <>
 
             <Gridp>
                 <Grid1>
                     <img src="https://res.cloudinary.com/dv08oqgvx/image/upload/v1636943290/rtimzm8sfrtbirdr3z24.png" alt="" />
                 </Grid1>
 
-                
                 <Grid2>
                     <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
                 </Grid2>
-
 
                 <Grid3>
                     Nada como una Guajolota para empezar el día
                 </Grid3>
 
-                
                 <Grid4>
                     <FontAwesomeIcon icon={faSearch} />
                 </Grid4>
 
-               
                 <Grid5>
                     <Input  type="text" placeholder="Sabor de guajolo..." >
                     </Input>
                 </Grid5>
 
-               
-               
                 <Grid6>
-                   
                 <Link  to="/guajolota" style={{ textDecoration: 'none' }}>Guajolotas </Link>
-                
                 </Grid6>
 
-               
                 <Grid7>
                 <Link  to="/bebida" style={{ textDecoration: 'none' }}>Bebidas</Link>
                 </Grid7>
 
-               
                 <Grid8>
                 <Link  to="/tamal" style={{ textDecoration: 'none' }}>Tamales</Link>
-                </Grid8>
-
-               
-
-                
-               
+                </Grid8> 
 
             </Gridp>
             
-        </div>
+        </>
     )
 }
 <input type="text" placeholder="sabor de guajolota, bebidas, sabor de tamal" >

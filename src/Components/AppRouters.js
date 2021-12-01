@@ -1,17 +1,10 @@
 import React,{useState} from 'react'
-import {BrowserRouter, 
-    Routes,
-    Route,
-    Link} 
-    from 'react-router-dom';
-
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import Cart from './Cart';    
 import Guajolota from './Guajolota';
 import Bebidas from './Bebidas';
 import Tamales from './Tamales'
 import { Main } from './Main';
-
-
 
 //importo las imagenes de guajolotas 
 import Guayabag from '../imagesGuajolotas/Guayabag.png';
@@ -20,17 +13,11 @@ import Pasasg from '../imagesGuajolotas/Pasasg.png';
 import Piñag from '../imagesGuajolotas/Piñag.png';
 import Verdeg from '../imagesGuajolotas/Verdeg.png';
 
-
-
-
 //importo las imagenes de bebidas
 import Arrozg from '../imagesbebidas/Arroz.png';
 import Cafe from '../imagesbebidas/Cafe.png';
 import Champurado from '../imagesbebidas/Champurrado.png';
 import Chocolates from '../imagesbebidas/Chocolate.png'
-
-
-
 
 //importo las imagenes de tamales
 import Guayabat from '../imagesTamales/Guayabat.png'
@@ -41,14 +28,14 @@ import Verdet from '../imagesTamales/Verdet.png';
 import Plus from './Plus';
 import PlusBebidas from './PlusBebidas';
 import PlusTamales from './PlusTamales'
+import { Navbar } from './Navbar';
 
 
 export const AppRouter = () => {
 
-
     //creo el estado de guajolotas con un listado de guajolotas 
     const [guajolotas, setGuajolotas] = useState([
-        { type:"guajolotas", id: 1, name: 'Verde',  image: Verdeg, price: 25},
+        {type:"guajolotas", id: 1, name: 'Verde',  image: Verdeg, price: 25},
         {id: 2, name: 'Mole', image: Moleg, price: 25},
         {id: 3, name: 'Guayaba', image: Guayabag, price: 25},
         {id: 4, name: 'Piña', image: Piñag, price: 25},
@@ -75,14 +62,11 @@ export const AppRouter = () => {
       ])
 
 //creo el estado del carrito y el setCart para actualizar su estado
-
-      const [cart, setCart] = useState([])
-
-
-    
+    const [cart, setCart] = useState([])
 
     return (
-        <div>
+
+        <>
             <BrowserRouter>
             <Main/>
                 <Routes>
@@ -139,12 +123,9 @@ export const AppRouter = () => {
 
                             )
                         )}/> 
-                   
-
-
 
                     {/* Enrutamiento para ver plus seleccionar combos o add mas productos selectionar sabor mostrando guajolotas  */}
-                    <Route exact path="/plus/guajolota" element = {guajolotas.map((guajolota) => (
+                    <Route exact path="/plus/guajolota/" element = {guajolotas.map((guajolota) => (
                             <Plus 
                             key= {guajolota.id}
                             guajolota={guajolota}
@@ -188,6 +169,8 @@ export const AppRouter = () => {
                     
                 </Routes>
             </BrowserRouter>
-        </div>
+            
+        </>
+
     )
 }

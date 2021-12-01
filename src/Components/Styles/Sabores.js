@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const  Gridsabores = styled.div`
     display: grid;
     grid-template-columns: repeat(20, 1fr);

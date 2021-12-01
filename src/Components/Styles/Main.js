@@ -1,8 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
 export const Gridp = styled.div`
-
         font-family: 'Inter', sans-serif;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -10,36 +8,27 @@ export const Gridp = styled.div`
         grid-template-rows: 100px 0px 170px 80px 50px 50px;
         background-color: #F2F2F2;
         /* border: 1px solid green; */
-
-`
-
+`;
 export const Grid1 = styled.div`
-  
     grid-column: 1/3;
     grid-row: 1/2;  
     background-color: #F2F2F2;
     padding: 24px 24px;
-
-
-`
+`;
 
 export const Grid2 = styled.div`
-   
     grid-column: 9/11;
     grid-row: 1/2;  
     background-color: #F2F2F2;
     /* border: 1px solid blue; */
     padding: 44px 0px 0px 24px;
     color: #a0a0a0;
-
-
-`
+`;
 
 export const Grid3 = styled.div`
    
     grid-column: 1/12;
     grid-row: 2/4; 
-     
     background-color: #F2F2F2;
     /* border: 1px solid pink; */
     font-style: normal  ;
@@ -49,8 +38,7 @@ export const Grid3 = styled.div`
     font-family: 'Inter', sans-serif;
     padding: 20px 24px;
 
-
-`
+`;
 
 export const Grid4 = styled.div`
     
@@ -62,11 +50,8 @@ export const Grid4 = styled.div`
     padding: 20px 20px;
     color: #3838389e;
     font-size: 20px;
-
     z-index: 10;
-
-
-`
+`;
 
 export const Grid5 = styled.div`
    
@@ -74,11 +59,8 @@ export const Grid5 = styled.div`
     grid-row: 4/4;  
     background-color: #F2F2F2;
     /* border: 1px solid black; */
-
     z-index: 1;
-
-
-`
+`;
 
 export const Grid6 = styled.div`
     background-color: #F2F2F2;
@@ -88,7 +70,7 @@ export const Grid6 = styled.div`
     text-align: center;
 
 
-`
+`;
 
 export const Grid7 = styled.div`
     background-color: #F2F2F2;
@@ -99,7 +81,7 @@ export const Grid7 = styled.div`
     text-align: center;
 
 
-`
+`;
 
 export const Grid8 = styled.div`
     background-color: #F2F2F2;
@@ -109,9 +91,7 @@ export const Grid8 = styled.div`
     text-align: center;
 
 
-`
-
-
+`;
 
 export const Input = styled.input`
     background-color: #E7E7E7;
@@ -125,8 +105,7 @@ export const Input = styled.input`
     &:focus {
                 border: none;
             }
-    
-`
+`;
 
 
 

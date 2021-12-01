@@ -7,22 +7,16 @@ const Tamales = ({tamal, cart, setCart, tamales}) => {
     const {idt, namet, imaget, pricet} = tamal
 
 
-    const addGuaj = idt => {
-        const tamal = tamales.filter((tamal) => tamal.idt === idt )
-        setCart([...cart, ...tamal])
-    };
-  ///una funcion que capture el id atravez del evento de un boton  y actulice el estado de la ruta plus 
-
-//   const addGuaj = id => {
-//     const guajolota = guajolotas.filter((guajolota) => guajolota.id === id  )
-//     setCart([...cart, ...guajolota])
-// };
+    // const addGuaj = idt => {
+    //     const tamal = tamales.filter((tamal) => tamal.idt === idt )
+    //     setCart([...cart, ...tamal])
+    // };
 
     return (
         <div>
-             <Gridfather>{/* Grid papa */}
+             <Gridfather>
                 
-                <Gridson>{/* Grid hijo */}
+                <Gridson>
 
                      
                         <Gridsonofson>
@@ -44,8 +38,6 @@ const Tamales = ({tamal, cart, setCart, tamales}) => {
                                     Confirmar 
                                     </button>
                                 
-                                    
-                                
                                 <button type='button' onClick={() => addGuaj(id) }>
                                     Eliminar 
                                     </button> */}
@@ -54,9 +46,9 @@ const Tamales = ({tamal, cart, setCart, tamales}) => {
                         
                         </Gridsonofson>
                         
-                </Gridson>{/* Grid hijo */}
+                </Gridson>
 
-        </Gridfather> {/* Grid papa */}
+        </Gridfather>
         </div>
     )
 }

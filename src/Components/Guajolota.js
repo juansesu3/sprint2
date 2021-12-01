@@ -3,17 +3,10 @@ import {  Gridfather, Gridson, Gridsonofson, Gridss1, Gridss2, Gridss3,  Gridss4
 
 
 
-
-
-const Guajolota = ({guajolota, cart, setCart, guajolotas}) => {
+const Guajolota = ({guajolota,  guajolotas}) => {
     
+    // cart, setCart,
     
-    
-    //Constante que va guardar las propiedades del estad de las guajolotas
-    const {id, name, image, price} = guajolota
-
-
-
     //Funcion para agregar guajolotas al carrito 
     // const addGuaj = id => {
     //     const guajolota = guajolotas.filter((guajolota) => guajolota.id === id  )
@@ -23,21 +16,21 @@ const Guajolota = ({guajolota, cart, setCart, guajolotas}) => {
 
     //Funcion para eliminar guajolota 
 
-    const delGuajolota = (id) => {
-        const guajolotas =  cart.filter(guajolota => guajolota.id !== id )
-        // setCart(...guajolotas)
+    // const delGuajolota = (id) => {
+    //     const guajolotas =  cart.filter(guajolota => guajolota.id !== id )
+    //     setCart(...guajolotas)
 
-    }
-    
-    
+    // }
+
+
+    //Constante que va guardar las propiedades del estad de las guajolotas
+    const {id, name, image, price} = guajolota
+
     return(
-    <div> 
-    
-
-                    
-                     <Gridfather>{/* Grid papa */}
+    <>
+                     <Gridfather>
                 
-                            <Gridson>{/* Grid hijo */}
+                            <Gridson>
                                     <Gridsonofson>
                                         <Gridss1><img src={image} alt="" /></Gridss1>
                                         <Gridss2>{name}</Gridss2>
@@ -48,10 +41,10 @@ const Guajolota = ({guajolota, cart, setCart, guajolotas}) => {
                                                 // < Gridss4  type='button' onClick={() => addGuaj(id) }>
                                                 //     Add +
                                                 //     </ Gridss4 >
-                                                    <div></div>
+                                                    <></>
                                         
                                         ): (
-                                            <div>
+                                            <>
                                             {/* <button type='button' onClick={() => addGuaj(id) }>
                                                 Confirmar 
                                                 </button> */}
@@ -61,15 +54,13 @@ const Guajolota = ({guajolota, cart, setCart, guajolotas}) => {
                                             {/* <button type='button' onClick={() => delGuajolota(id) }>
                                                 Elimar 
                                                 </button> */}
-                                            </div>
+                                            </>
                                     )} 
                                     </Gridsonofson>
-                            </Gridson>{/* Grid hijo */}
+                            </Gridson>
 
-                    </Gridfather> {/* Grid papa */}
-
-        
-    </div>
+                    </Gridfather> 
+    </>
     );
 };
 export default Guajolota 

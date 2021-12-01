@@ -56,9 +56,6 @@ export const Grdt5 = styled.div`
 ;
 `;
 
-
-
-
 //start grid con hijos 
 export const Grdph6 = styled.div`
     display: grid;
@@ -86,7 +83,6 @@ export const Grdph61 = styled.button`
         background-color: #b3b3b3a1;
     }
 
-
 `;
 export const Grdph62 = styled.div`
  /* border:2px solid red; */
@@ -98,8 +94,6 @@ export const Grdph62 = styled.div`
     font-style: normal;
     line-height: 33.89px ;
     text-align: center;
-
-
 
 `;
 export const Grdph63 = styled.button`
@@ -115,13 +109,8 @@ export const Grdph63 = styled.button`
         box-shadow: 5px 5px 10px #8585856a;
         background-color: #b3b3b3a1;
     }
-
-
 `;
 //end grid con hijos 
-
-
-
 
 export const Grdt7 = styled.div`
 
@@ -138,10 +127,6 @@ export const Grdt7 = styled.div`
     
 `;
 
-
-
-
-
 //start grid con hijos 
 export const Grdph8 = styled.div`
     display: grid;
@@ -155,12 +140,7 @@ export const Grdph8 = styled.div`
 
 //end grid con hijos
 
-
-
-
-
 export const Grdt9 = styled.div`
-
     /* border:2px solid blue; */
     grid-column: 1/11;
     grid-row: 12/13;
@@ -169,12 +149,10 @@ export const Grdt9 = styled.div`
     font-style: normal;
     line-height: 24.2px ;
     padding: 15px 15px;
-    
     color:  #0D0D0D;
 
 `;
 export const Grdt10 = styled.div`
-
     /* border:2px solid blue; */
     grid-column: 1/11;
     grid-row: 13/14;
@@ -185,12 +163,7 @@ export const Grdt10 = styled.div`
     padding: 0px 15px;
     letter-spacing: 0.02em;
     color:  #0D0D0D;
-
-
 `;
-
-
-
 
 //start grid con hijos
 ;export const Grdph11 = styled.div`
@@ -247,11 +220,6 @@ grid-column: 2/15;
 
 `;
 //end grid con hijos
-
-
-
-
-
 //start grid con hijos
 export const Grdph12 = styled.div`
 
@@ -290,10 +258,8 @@ export const Grdph122 = styled.div`
     font-style: normal;
     line-height: 20.57px ;
     padding: 0px 15px;
-    text-align: end;
-    
+    text-align: end; 
     color:  #F6F6F9;
-
 `;
 //end grid con hijos
 
